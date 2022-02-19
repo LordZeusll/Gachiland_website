@@ -1,6 +1,6 @@
 html {
-    background-color: red;
-    color: white;
+    background-color:white;
+    color: black;
 }
 
 body {
@@ -8,17 +8,48 @@ body {
 }
 
 header {
-    background-color: rgb(185, 0, 0);
-    width: 100%;
+    color: white;
+    background-color: rgba(253,39,8,255);
     display: grid;
-    grid-template-rows: 2fr 1fr;
-    grid-auto-flow: column;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+    "logo1 heading logo2"
+    "logo1 motto logo2"; 
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: xx-large;
+    margin: 10px;
 }
 
 p {
-    text-align: center;
-    color: black;
-    background-color: white;
-    margin: 0;
+    text-align: left;
+    font-size: large;
+    margin: 10px;
+}
+
+.logo1 {
+    grid-area: logo1;
+}
+
+.logo2 {
+    grid-area: logo2;
+}
+
+.heading {
+    grid-area: heading;
+}
+
+.motto {
+    grid-area: motto;
+}
+
+.logo1, .heading, .logo2, .motto {
+    justify-self: center; 
+    align-self: center; 
 }
