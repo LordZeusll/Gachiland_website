@@ -9,7 +9,6 @@ body {
 
 header {
     color: white;
-    height: 200px;
     background-color: rgba(253,39,8,255);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
