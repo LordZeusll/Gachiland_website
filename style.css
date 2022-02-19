@@ -1,0 +1,24 @@
+html {
+    background-color: red;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(185, 0, 0);
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin: 0;
+}
