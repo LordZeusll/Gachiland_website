@@ -14,8 +14,8 @@ header {
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
     grid-template-areas: 
-    "logo1 heading logo2"
-    "logo1 motto logo2"; 
+    "heading logo nav"
+    "motto motto nav"; 
 }
 
 h1 {
@@ -24,8 +24,9 @@ h1 {
 }
 
 h2 {
-    font-size: xx-large;
+    font-size: 50px;
     margin: 10px;
+    font-stretch: expanded;
 }
 
 p {
@@ -34,24 +35,27 @@ p {
     margin: 10px; 
 }
 
-.logo1 {
-    grid-area: logo1;
-}
-
-.logo2 {
-    grid-area: logo2;
+.logo {
+    justify-self: start;
+    grid-area: logo;
 }
 
 .heading {
+    justify-self: end;
     grid-area: heading;
 }
 
 .motto {
     grid-area: motto;
+    justify-self: center;
 }
 
-.logo1, .heading, .logo2, .motto {
-    justify-self: center; 
+nav {
+    grid-area: nav;
+    align-self: center;
+}
+
+.logo, .heading, .motto {
     align-self: center; 
     text-align: center;
 }
