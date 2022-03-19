@@ -11,11 +11,10 @@ header {
     color: white;
     background-color: rgba(253,39,8,255);
     display: grid;
-    grid-template-columns: 1fr 0.1fr 1.9fr; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 0.6fr 2.4fr 1fr; 
+    grid-template-rows: 1fr; 
     grid-template-areas: 
-    "heading logo nav"
-    "motto motto ."; 
+    "logo heading nav"; 
 }
 
 h1 {
@@ -38,24 +37,16 @@ p {
 .logo {
     justify-self: start;
     grid-area: logo;
-}
-
-.heading {
-    justify-self: center;
-    grid-area: heading;
-}
-
-.motto {
-    grid-area: motto;
-    justify-self: center;
+    margin: 10px;
 }
 
 nav {
     grid-area: nav;
-    justify-self: center;
+    justify-self: end;
+    margin: 10px;
 }
 
-.logo, .heading, .motto, nav {
+.logo, nav {
     align-self: center; 
     text-align: center;
 }
