@@ -34,6 +34,17 @@ p {
     margin: 10px; 
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+}
+
+td {
+    padding-right: 40px;
+}
+
 .logo {
     justify-self: start;
     grid-area: logo;
@@ -48,5 +59,4 @@ nav {
 
 .logo, nav {
     align-self: center; 
-    text-align: center;
 }
