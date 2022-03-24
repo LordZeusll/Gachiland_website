@@ -11,11 +11,10 @@ header {
     color: white;
     background-color: rgba(253,39,8,255);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 0.6fr 2.4fr 1fr; 
+    grid-template-rows: 1fr; 
     grid-template-areas: 
-    "logo1 heading logo2"
-    "logo1 motto logo2"; 
+    "logo heading nav"; 
 }
 
 h1 {
@@ -24,8 +23,9 @@ h1 {
 }
 
 h2 {
-    font-size: xx-large;
-    margin: 10px;
+    font-size: 35px;
+    word-spacing: 6px;
+    justify-self: center;
 }
 
 p {
@@ -34,24 +34,29 @@ p {
     margin: 10px; 
 }
 
-.logo1 {
-    grid-area: logo1;
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
 }
 
-.logo2 {
-    grid-area: logo2;
+td {
+    padding-right: 40px;
 }
 
-.heading {
-    grid-area: heading;
+.logo {
+    justify-self: start;
+    grid-area: logo;
+    margin: 10px;
 }
 
-.motto {
-    grid-area: motto;
+nav {
+    grid-area: nav;
+    justify-self: end;
+    margin: 10px;
 }
 
-.logo1, .heading, .logo2, .motto {
-    justify-self: center; 
+.logo, nav {
     align-self: center; 
-    text-align: center;
 }
