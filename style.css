@@ -1,62 +1,70 @@
 html {
-    background-image: url("resources/background.jpg");
-    color: black;
+  background-image: url("resources/background.jpg");
+  color: black;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 header {
-    color: white;
-    background-color: rgba(253,39,8,255);
-    display: grid;
-    grid-template-columns: 0.6fr 2.4fr 1fr; 
-    grid-template-rows: 1fr; 
-    grid-template-areas: 
-    "logo heading nav"; 
-}
-
-h1 {
-    font-size: 40px;
-    font-family: 'Merriweather', serif;
-}
-
-h2 {
-    font-size: 35px;
-    word-spacing: 6px;
-    justify-self: center;
-}
-
-p {
-    text-align: left;
-    font-size: large;
-    margin: 10px; 
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Merriweather', serif;
-    text-transform: uppercase;
-}
-
-td {
-    padding-right: 40px;
-}
-
-.logo {
-    justify-self: start;
-    grid-area: logo;
-    margin: 10px;
+  display: grid;
+  color: white;
+  background-color: rgba(253, 39, 8, 255);
+  grid-template-columns: 0.6fr 2.4fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo heading nav";
 }
 
 nav {
-    grid-area: nav;
-    justify-self: end;
-    margin: 10px;
+  margin: 10px;
+  grid-area: nav;
+  justify-self: end;
 }
 
-.logo, nav {
-    align-self: center; 
+p {
+  margin: 10px;
+  text-align: left;
+  font-size: large;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Merriweather", serif;
+}
+
+h2 {
+  font-size: 35px;
+  word-spacing: 6px;
+  justify-self: center;
+}
+
+td {
+  padding-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+}
+
+.cumrades {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+}
+
+.logo {
+  margin: 10px;
+  justify-self: start;
+  grid-area: logo;
+}
+
+.logo,
+nav {
+  align-self: center;
 }
