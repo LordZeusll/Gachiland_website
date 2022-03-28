@@ -1,6 +1,5 @@
 html {
   background-image: url("resources/background.jpg");
-  color: black;
 }
 
 body {
@@ -9,7 +8,6 @@ body {
 
 header {
   display: grid;
-  color: white;
   background-color: rgba(253, 39, 8, 255);
   grid-template-columns: 0.6fr 2.4fr 1fr;
   grid-template-rows: 1fr;
@@ -23,31 +21,36 @@ nav {
 }
 
 p {
-  margin: 10px;
-  text-align: left;
+  font-size: 20px !important;
+  font-family: "Roboto", serif;
+  margin: 5px;
+  text-align: center;
   font-size: large;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Merriweather", serif;
+  word-spacing: 6px;
+  text-align: center;
+  margin: 30px auto;
 }
 
-h2 {
-  font-size: 35px;
-  word-spacing: 6px;
-  justify-self: center;
+li {
+  font-family: "Roboto", serif;
+  font-size: 20px;
 }
 
 td {
   padding-right: 40px;
+  font-family: "Merriweather", serif; 
 }
 
 a {
   text-decoration: none;
-  color: white;
   font-family: "Merriweather", serif;
   text-transform: uppercase;
+  color: white;
 }
 
 .cumrades {
@@ -56,6 +59,7 @@ a {
   margin-right: auto;
   width: 300px;
   height: 300px;
+  margin-top: 30px;
 }
 
 .logo {
