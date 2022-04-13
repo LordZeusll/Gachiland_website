@@ -24,7 +24,7 @@ p {
   font-size: 20px !important;
   font-family: "Roboto", serif;
   margin: 5px;
-  text-align: center;
+  text-align: left;
   font-size: large;
 }
 
@@ -34,6 +34,13 @@ h1 {
   word-spacing: 6px;
   text-align: center;
   margin: 30px auto;
+}
+
+img {
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li {
@@ -46,7 +53,7 @@ td {
   font-family: "Merriweather", serif; 
 }
 
-a {
+header a {
   text-decoration: none;
   font-family: "Merriweather", serif;
   text-transform: uppercase;
@@ -54,9 +61,6 @@ a {
 }
 
 .cumrades {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 300px;
   height: 300px;
   margin-top: 30px;
