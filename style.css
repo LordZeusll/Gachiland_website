@@ -83,18 +83,28 @@ nav {
   align-self: center;
 }
 
-.flex-container {
+.cumrades-flex-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.flex-container p {
+.cumrades-flex-container p {
   text-align: center;
 }
 
-.flex-container div {
+.cumrades-flex-container div {
   width: 25%;
+}
+
+.treasure-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.treasure-flex-container div {
+  width: 33%;
 }
 
 .wrapper {
